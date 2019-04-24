@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="favicon/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" type="text/css" href="app/css/style.css" />
+  <script type="text/javascript" src="app/js/main.js"></script>
+  <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+    crossorigin="anonymous"
+  />
+
+  <title>
+    MONET: Blocks
+  </title>
+</head>
+<body>
+  <script>
+    get_block_data();
+  </script>
+  <div id="banner">
+    <img
+      src="app/images/tenom-logo.png"
+      alt="tenom-logo"
+      style="width:50px;height:50px;padding-left: 50px;padding-top: 5px;"
+    />
+
+    <ul>
+      <li>
+        <button onclick="window.location.href = 'index.html';">
+          <i class="fas fa-project-diagram"></i> Network
+        </button>
+      </li>
+      <li>
+        <button onclick="window.location.href = 'blocks.html';" class="active">
+          <i class="fas fa-cubes"></i> Blocks
+        </button>
+      </li>
+      <li>
+        <button onclick="window.location.href = 'accounts.html';">
+          <i class="fas fa-user"></i> Accounts
+        </button>
+      </li>
+      <li>
+        <button onclick="window.location.href = 'transactions.html';">
+          <i class="fas fa-credit-card"></i> Transactions
+        </button>
+      </li>
+      <li>
+        <button onclick="window.location.href = 'settings.html';">
+          <i class="fas fa-cog"></i> Settings
+        </button>
+      </li>
+    </ul>
+  </div>
+  <div id="block-div">
+    <h1 style="text-align:center" id="block_count">
+      <i class="fas fa-cubes"></i>0
+    </h1>
+    <button id="previous-block" onclick="get_previous_block()">Previous</button>
+    <button id="next-block" style="float: right" onclick="get_next_block()">
+      Next
+    </button>
+    <table style="width:50%" id="block-table"></table>
+  </div>
+</body>

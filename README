@@ -1,0 +1,17 @@
+# EVM-Lite Dashboard
+
+Note: this is a WIP and is lacking functionality
+
+A graphical dashboard to display the status of a network of evm-lite nodes
+
+Note: It is currently hard coded to query the nodes on the testnet
+
+## Installation
+
+To run the dashboard clone the repo and run a python HTTP server:
+
+```console
+git clone https://github.com/mosaicnetworks/evm-lite-dashboard.git
+cd evm-lite-dashboard
+python -m SimpleHTTPServer
+```
